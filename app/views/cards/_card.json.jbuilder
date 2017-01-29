@@ -1,0 +1,2 @@
+json.extract! card, :id, :CardNumber, :RealName, :Gender, :Birthday, :Occupation, :TypeOfCard, :EgoBalance, :MobileNumber, :email, :Issued, :LastBuy, :created_at, :updated_at
+json.url card_url(card, format: :json)

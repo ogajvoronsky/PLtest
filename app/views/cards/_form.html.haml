@@ -1,0 +1,44 @@
+= form_for(card) do |f|
+  - if card.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(card.errors.count, "error")
+        prohibited this card from being saved:
+      %ul
+        - card.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = f.label 'Номер картки'
+    = f.number_field :CardNumber
+  .field
+    = f.label :RealName
+    = f.text_field :RealName
+  .field
+    = f.label :Gender
+    = f.text_field :Gender
+  .field
+    = f.label :Birthday
+    = f.date_select :Birthday
+  .field
+    = f.label :Occupation
+    = f.text_field :Occupation
+  .field
+    = f.label :TypeOfCard
+    = f.text_field :TypeOfCard
+  .field
+    = f.label :EgoBalance
+    = f.text_field :EgoBalance
+  .field
+    = f.label :MobileNumber
+    = f.text_field :MobileNumber
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :Issued
+    = f.text_field :Issued
+  .field
+    = f.label :LastBuy
+    = f.date_select :LastBuy
+  .actions
+    = f.submit

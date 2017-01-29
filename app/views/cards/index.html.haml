@@ -1,0 +1,47 @@
+- flash.each do |type, message|
+  %div { class: [flash_class(type)], role: 'alert' }
+  = message
+
+%h1= 'Картки лояльності'
+
+%table.table
+  %thead
+    %tr
+      %th Номер картки
+      %th Ім'я
+      %th Стать
+      %th Дата народження
+      %th Вид діяльності
+      %th Тип картки
+      %th Баланс Ego
+      %th Мобільний
+      %th E-mail
+      %th Місце видачі
+      %th Останній візит
+
+      %p= will_paginate @cards
+
+  %tbody
+    - @cards.each do |card|
+      %tr
+        %td= card.CardNumber
+        %td= card.RealName
+        %td= card.Gender
+        %td= card.Birthday
+        %td= card.Occupation
+        %td= card.TypeOfCard
+        %td= card.EgoBalance
+        %td= card.MobileNumber
+        %td= card.email
+        %td= card.Issued
+        %td= card.LastBuy
+        %td= link_to 'Show', card
+        %td= link_to 'Edit', edit_card_path(card)
+        %td= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' }
+      
+%p= link_to 'New Card', new_card_path
+%span= file_field_tag 'csv_file_to_import', :accept => 'csv'
+%span= submit_tag('Імпорт', class: 'btn btn-success', action: 'impport_csv')
+%span= link_to 'Clear', clear_cards_path, method: :clear, class: 'btn btn-danger'
+
+

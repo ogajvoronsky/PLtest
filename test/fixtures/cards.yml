@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CardNumber: 1
+  RealName: MyString
+  Gender: 
+  Birthday: 2017-01-27
+  Occupation: MyString
+  TypeOfCard: MyString
+  Ego: 1.5
+  MobileNumber: MyString
+  email: MyString
+  Issued: MyString
+  LastBuy: 2017-01-27
+
+two:
+  CardNumber: 1
+  RealName: MyString
+  Gender: 
+  Birthday: 2017-01-27
+  Occupation: MyString
+  TypeOfCard: MyString
+  Ego: 1.5
+  MobileNumber: MyString
+  email: MyString
+  Issued: MyString
+  LastBuy: 2017-01-27

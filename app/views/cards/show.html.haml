@@ -1,0 +1,37 @@
+%p#notice= notice
+%p
+  %strong Номер карти:
+  = @card.CardNumber
+%p
+  %strong ПІБ:
+  = @card.RealName
+%p
+  %strong Стать:
+  = @card.Gender
+%p
+  %strong Дата народження:
+  = @card.Birthday
+%p
+  %strong Вид діяльності:
+  = @card.Occupation
+%p
+  %strong Тип картки:
+  = @card.TypeOfCard
+%p
+  %strong Залишок Ego:
+  = @card.EgoBalance
+%p
+  %strong Мобільний:
+  = @card.MobileNumber
+%p
+  %strong E-mail:
+  = @card.email
+%p
+  %strong Місце видачі:
+  = @card.Issued
+%p
+  %strong Остання покупка:
+  = @card.LastBuy
+= link_to 'Edit', edit_card_path(@card)
+|
+= link_to 'Back', cards_path
