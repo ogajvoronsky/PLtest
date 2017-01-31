@@ -7,22 +7,19 @@ class CardsController < ApplicationController
     @cards = Card.all.paginate( :page => params[:page] )
   end
 
-  # GET /cards/1
-  # GET /cards/1.json
   def show
   end
 
-  # GET /cards/new
+
   def new
     @card = Card.new
   end
 
-  # GET /cards/1/edit
+
   def edit
   end
 
-  # POST /cards
-  # POST /cards.json
+
   def create
     @card = Card.new(card_params)
 
@@ -37,8 +34,7 @@ class CardsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /cards/1
-  # PATCH/PUT /cards/1.json
+
   def update
     respond_to do |format|
       if @card.update(card_params)
@@ -51,8 +47,7 @@ class CardsController < ApplicationController
     end
   end
 
-  # DELETE /cards/1
-  # DELETE /cards/1.json
+
   def destroy
     @card.destroy
     respond_to do |format|
@@ -62,10 +57,14 @@ class CardsController < ApplicationController
   end
 
   def import_csv
-      p('fd')
+    uploaded_io = params[:file]
+    p(uploaded_io.inspect)
+
   end
+
+
   def clear
-          
+      Card.destroy_all
       respond_to do |format|
         format.html { redirect_to cards_url, notice: 'Cards was successfully destroyed.' }
         format.json { head :no_content }
@@ -80,6 +79,6 @@ class CardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def card_params
-      params.require(:card).permit(:CardNumber, :RealName, :Gender, :Birthday, :Occupation, :TypeOfCard, :EgoBalance, :MobileNumber, :email, :Issued, :LastBuy)
+      params.require(:card).permit(:CardNumber, :RealName, :Gender, :Birthday, :Occupation, :TypeOfCard, :EgoBalance, :MobileNumber, :email, :Issued, :LastBuy, :file)
     end
 end

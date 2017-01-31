@@ -1,6 +1,6 @@
-- flash.each do |type, message|
-  %div { class: [flash_class(type)], role: 'alert' }
-  = message
+- if !flash.empty?
+  - flash.keys.each do |k|
+    = flash[k]
 
 %h1= 'Картки лояльності'
 
@@ -40,8 +40,12 @@
         %td= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' }
       
 %p= link_to 'New Card', new_card_path
-%span= file_field_tag 'csv_file_to_import', :accept => 'csv'
-%span= submit_tag('Імпорт', class: 'btn btn-success', action: 'impport_csv')
+
+= form_tag(controller: :cards, action: :import_csv, :multipart => true ) do
+  = file_field :file
+  = submit_tag 'Імпорт', data: { disable_with: 'Uploading' }
+
+
 %span= link_to 'Clear', clear_cards_path, method: :clear, class: 'btn btn-danger'
 
 
