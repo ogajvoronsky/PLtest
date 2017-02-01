@@ -57,9 +57,10 @@ class CardsController < ApplicationController
   end
 
   def import_csv
-    uploaded_io = params[:file]
-    p(uploaded_io.inspect)
-
+    #upload_file = File.new(params[:file], "rb").read
+    #File.open(Rails.root.join('public', 'uploads', upload_file ), 'wb') do |file|
+    #  file.write(upload_file)
+    #end
   end
 
 
