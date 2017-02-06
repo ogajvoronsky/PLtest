@@ -41,11 +41,6 @@
       
 %p= link_to 'New Card', new_card_path
 
-= form_tag(controller: :cards, action: :import_csv, :multipart => true ) do
-  = file_field_tag :file
-  = submit_tag 'Імпорт', data: { disable_with: 'Uploading' }
-
-
 %span= link_to 'Clear', clear_cards_path, method: :clear, class: 'btn btn-danger'
 
 

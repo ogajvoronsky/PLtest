@@ -18,7 +18,7 @@
     = f.text_field :Gender
   .field
     = f.label :Birthday
-    = f.date_select :Birthday
+    = f.date_select :Birthday, @bday_field_options
   .field
     = f.label :Occupation
     = f.text_field :Occupation
@@ -42,3 +42,4 @@
     = f.date_select :LastBuy
   .actions
     = f.submit
+

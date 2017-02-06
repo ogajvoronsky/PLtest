@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170127200846) do
+ActiveRecord::Schema.define(version: 20170206131235) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,16 @@ ActiveRecord::Schema.define(version: 20170127200846) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.index ["CardNumber"], name: "index_cards_on_CardNumber", using: :btree
+  end
+
+  create_table "csv_files", force: :cascade do |t|
+    t.string   "file"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "uploaded_file_csv_file_name"
+    t.string   "uploaded_file_csv_content_type"
+    t.integer  "uploaded_file_csv_file_size"
+    t.datetime "uploaded_file_csv_updated_at"
   end
 
 end

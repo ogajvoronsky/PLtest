@@ -1,0 +1,3 @@
+= form_for csv_file, url: import_csv_path, html: { multipart: true } do |form|
+  = form.file_field :uploaded_file_csv
+<% end %>

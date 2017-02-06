@@ -1,5 +1,7 @@
 class CardsController < ApplicationController
   before_action :set_card, only: [:show, :edit, :update, :destroy]
+  before_action :set_options, only: [:edit, :new]
+
 
   # GET /cards
   # GET /cards.json
@@ -78,8 +80,13 @@ class CardsController < ApplicationController
       @card = Card.find(params[:id])
     end
 
+    def set_options
+      @bday_field_options = { :start_year => 1900, :end_year => 2016 }
+    end
+
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def card_params
-      params.require(:card).permit(:CardNumber, :RealName, :Gender, :Birthday, :Occupation, :TypeOfCard, :EgoBalance, :MobileNumber, :email, :Issued, :LastBuy, :file)
+      params.require(:card).permit(:CardNumber, :RealName, :Gender, :Birthday, :Occupation, :TypeOfCard, :EgoBalance, :MobileNumber, :email, :Issued, :LastBuy)
     end
 end

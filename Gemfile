@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
-
 gem 'pg'
 gem 'smarter_csv'
 gem 'haml'
 gem 'will_paginate', '~> 3.1.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'will_paginate-bootstrap'
+gem 'paperclip', '~> 5.0.0'
 
 
 # Use Puma as the app server
