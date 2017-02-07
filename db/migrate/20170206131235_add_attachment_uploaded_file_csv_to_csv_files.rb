@@ -6,6 +6,6 @@ class AddAttachmentUploadedFileCsvToCsvFiles < ActiveRecord::Migration
   end
 
   def self.down
-    remove_attachment :csv_files, :uploaded_file_csv
+    remove_attachment :uploaded_file_csv
   end
 end

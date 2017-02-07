@@ -1,0 +1,1044 @@
+Started GET "/" for 127.0.0.1 at 2017-02-06 20:29:58 +0200
+  
+PG::ConnectionBad (FATAL:  password authentication failed for user "ffs"
+FATAL:  password authentication failed for user "ffs"
+):
+  
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+Started GET "/" for 127.0.0.1 at 2017-02-06 20:56:43 +0200
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "ffs-discount-dev" does not exist
+):
+  
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.1ms)
+  [1m[35m (142.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (137.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6957534942559377960);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCards (20170127200846)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (153.6ms)[0m  [1m[35mCREATE TABLE "cards" ("id" serial primary key, "CardNumber" integer, "RealName" character varying, "Gender" character varying, "Birthday" date, "Occupation" character varying, "TypeOfCard" character varying, "EgoBalance" float, "MobileNumber" character varying, "email" character varying, "Issued" character varying, "LastBuy" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (82.3ms)[0m  [1m[35mCREATE  INDEX  "index_cards_on_CardNumber" ON "cards"  ("CardNumber")[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170127200846"]]
+  [1m[35m (33.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCsvFiles (20170206123703)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (106.9ms)[0m  [1m[35mCREATE TABLE "csv_files" ("id" serial primary key, "file" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170206123703"]]
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAttachmentUploadedFileCsvToCsvFiles (20170206131235)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentUploadedFileCsvToCsvFiles < ActiveRecord::Migration[4.2] (called from require at /home/galex/pltest/bin/rails:9)
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "csv_files" ADD "uploaded_file_csv_file_name" character varying[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "csv_files" ADD "uploaded_file_csv_content_type" character varying[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "csv_files" ADD "uploaded_file_csv_file_size" integer[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "csv_files" ADD "uploaded_file_csv_updated_at" timestamp[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170206131235"]]
+  [1m[35m (26.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (32.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-06 18:57:28 UTC], ["updated_at", 2017-02-06 18:57:28 UTC]]
+  [1m[35m (30.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(6957534942559377960)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2017-02-06 20:58:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 8090ms (ActiveRecord: 4.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `import_csvs_path' for #<#<Class:0x007fcb4c8d0198>:0x0000000461d678>
+Did you mean?  import_csv_path):
+     6:     = csrf_meta_tags
+     7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+     9:     = link_to 'Import CSV', import_csvs_path
+    10: 
+    11:   %body
+    12: 
+  
+app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml___2590009662086992914_70255569726000'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.1ms)
+Started GET "/" for 127.0.0.1 at 2017-02-06 20:59:38 +0200
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 81ms (Views: 77.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:00:32 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (244.0ms)
+Completed 500 Internal Server Error in 275ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `csv_file' for #<#<Class:0x007fcb4ed04e10>:0x007fcb4ed0bc60>):
+    1: = form_for csv_file, url: import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+    3: <% end %>
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml__272175619215208708_70255588682580'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.1ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:02:33 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (307.0ms)
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `csv_file' for #<#<Class:0x007fcb4e5d18c8>:0x007fcb4e5d0748>):
+    1: = form_for csv_file, url: import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+    3: <% end %>
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml__272175619215208708_70255584907440'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.2ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.7ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:04:17 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (68.2ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 3.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x007fcb4efb45e8>
+Did you mean?  to_query):
+    1: = form_for CsvFile, url: import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+    3: <% end %>
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml__272175619215208708_70255590177420'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (34.6ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.6ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:04:52 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (30.9ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x007fcb4efb45e8>
+Did you mean?  to_query):
+    1: = form_for CsvFile, url: import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml__272175619215208708_70255576650080'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.2ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.7ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:08:49 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (45.3ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x007fcb4f2a8f60>
+Did you mean?  to_query):
+    1: = form_for CsvFile, url: import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml__272175619215208708_70255591712580'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.2ms)
+Started GET "/" for 127.0.0.1 at 2017-02-06 21:09:25 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (29.3ms)
+Completed 200 OK in 482ms (Views: 442.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:09:30 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (292.6ms)
+Completed 500 Internal Server Error in 303ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `csv' for #<#<Class:0x007f9400751318>:0x007f93f407b568>
+Did you mean?  CSV):
+    1: = form_for csv, url: import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml___3560177353321554081_70136819783320'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.1ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.8ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:11:05 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (24.3ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    1: = form_for CsvFile,  import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml___3560177353321554081_34529200'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.6ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:11:29 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    1: = form_for CsvFile, :import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml___3560177353321554081_70136716014600'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.2ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.1ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:11:40 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (30.4ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x00000003f229b8>
+Did you mean?  to_query):
+    1: = form_for CsvFile, url: import_csv_path, html: { multipart: true } do |form|
+    2:   = form.file_field :uploaded_file_csv
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml___3560177353321554081_34461980'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.8ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.0ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:42:15 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/galex/pltest/app/views/import_csvs/show.html.haml:4: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/import_csvs/show.html.haml:4: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.6ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.7ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 21:43:04 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x00000003f229b8>
+Did you mean?  to_query):
+    1: = form_for CsvFile do |form|
+    2:   = form.file_field :uploaded_file_csv
+    3:   
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml___3560177353321554081_70136831680920'
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.4.0-rc1/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.3ms)
+Started GET "/" for 127.0.0.1 at 2017-02-06 22:21:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (36.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (14.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (93.8ms)
+Completed 200 OK in 8962ms (Views: 8851.9ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/cards/new" for 127.0.0.1 at 2017-02-06 22:22:01 +0200
+Processing by CardsController#new as HTML
+  Rendering cards/new.html.haml within layouts/application
+  Rendered cards/_form.html.haml (72.9ms)
+  Rendered cards/new.html.haml within layouts/application (84.2ms)
+Completed 200 OK in 319ms (Views: 153.6ms | ActiveRecord: 111.9ms)
+
+
+Started POST "/cards" for 127.0.0.1 at 2017-02-06 22:22:25 +0200
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ozVPTwo1aI1ISfFzurv8l2wpiGN/+VnQhwOlNzU4KSE/o80lagrlMO0WlCEZw40vos6QzlwwRmJ13u+StoOw2Q==", "card"=>{"CardNumber"=>"6567", "RealName"=>"bkhjkj", "Gender"=>"", "Birthday(1i)"=>"1900", "Birthday(2i)"=>"2", "Birthday(3i)"=>"6", "Occupation"=>"ygk", "TypeOfCard"=>"b", "EgoBalance"=>"7697686879", "MobileNumber"=>"", "email"=>"", "Issued"=>"", "LastBuy(1i)"=>"2017", "LastBuy(2i)"=>"2", "LastBuy(3i)"=>"6"}, "commit"=>"Create Card"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCard Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "cards" WHERE "cards"."CardNumber" = $1 LIMIT $2[0m  [["CardNumber", 6567], ["LIMIT", 1]]
+  [1m[35mSQL (80.0ms)[0m  [1m[32mINSERT INTO "cards" ("CardNumber", "RealName", "Gender", "Birthday", "Occupation", "TypeOfCard", "EgoBalance", "MobileNumber", "email", "Issued", "LastBuy", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["CardNumber", 6567], ["RealName", "bkhjkj"], ["Gender", ""], ["Birthday", Tue, 06 Feb 1900], ["Occupation", "ygk"], ["TypeOfCard", "b"], ["EgoBalance", 7697686879.0], ["MobileNumber", ""], ["email", ""], ["Issued", ""], ["LastBuy", Mon, 06 Feb 2017], ["created_at", 2017-02-06 20:22:25 UTC], ["updated_at", 2017-02-06 20:22:25 UTC]]
+  [1m[35m (102.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/cards/1
+Completed 302 Found in 218ms (ActiveRecord: 183.7ms)
+
+
+Started GET "/cards/1" for 127.0.0.1 at 2017-02-06 22:22:25 +0200
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (1.8ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cards/show.html.haml within layouts/application
+  Rendered cards/show.html.haml within layouts/application (15.4ms)
+Completed 200 OK in 128ms (Views: 85.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/cards" for 127.0.0.1 at 2017-02-06 22:22:28 +0200
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (17.0ms)
+Completed 200 OK in 121ms (Views: 114.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 22:22:41 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (43.6ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x007fc65d5b7928>
+Did you mean?  to_query):
+    1: = form_for CsvFile do |form|
+    2:   = form.file_field :uploaded_file_csv
+    3:   
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml___3606350383963641188_70244973328660'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.3ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.3ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 22:44:46 +0200
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (67.2ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 38.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x007fc6772fd998>
+Did you mean?  to_query):
+    1: = form_for CsvFile do |form|
+    2:   = form.file_field :uploaded_file_csv
+    3:   = form.submit 'Import'
+    4:   
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml___3606350383963641188_70245190464220'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.8ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.1ms)
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-06 23:01:19 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ImportCsvsController#show as HTML
+  Rendering import_csvs/show.html.haml within layouts/application
+  Rendered import_csvs/show.html.haml within layouts/application (52.3ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 5.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x0000000416ca70>
+Did you mean?  to_query):
+    1: = form_for(CsvFile, :html => { :multipart => true }) do |form|
+    2:   = form.file_field :uploaded_file_csv
+    3:   = form.submit 'Import'
+    4: 
+  
+app/views/import_csvs/show.html.haml:1:in `_app_views_import_csvs_show_html_haml__3950248438153448949_33069060'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.5ms)
+Started GET "/" for 127.0.0.1 at 2017-02-07 21:28:40 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (51.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (221.5ms)
+Completed 200 OK in 1607ms (Views: 1442.1ms | ActiveRecord: 83.3ms)
+
+
+Started GET "/import_csv" for 127.0.0.1 at 2017-02-07 21:28:47 +0200
+  
+ActionController::RoutingError (uninitialized constant ImportCsvsController):
+  
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered collection of /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (39.2ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (49.0ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (132.9ms)
+Started GET "/" for 127.0.0.1 at 2017-02-07 21:40:25 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (107.6ms)
+Completed 500 Internal Server Error in 992ms (ActiveRecord: 9.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `import_csv_path' for #<#<Class:0x000000044de3e8>:0x0000000450f088>):
+     6:     = csrf_meta_tags
+     7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+     9:     = link_to 'Import CSV', import_csv_path
+    10: 
+    11:   %body
+    12: 
+  
+app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml__800263653214021926_37010680'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (22.7ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.0ms)
+Started GET "/" for 127.0.0.1 at 2017-02-07 21:42:05 +0200
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (29.7ms)
+Completed 200 OK in 131ms (Views: 123.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 21:42:07 +0200
+Processing by CsvFilesController#show as HTML
+  [1m[36mCsvFile Load (2.1ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" ORDER BY "csv_files"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 404 Not Found in 61ms (ActiveRecord: 13.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find CsvFile with []):
+  
+app/controllers/csv_files_controller.rb:25:in `set_csv_file'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.9ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.0ms)
+Started GET "/" for 127.0.0.1 at 2017-02-07 21:54:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (103.3ms)
+Completed 200 OK in 600ms (Views: 558.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 21:54:40 +0200
+  
+SyntaxError (/home/galex/pltest/app/controllers/csv_files_controller.rb:25: syntax error, unexpected '='
+...le_id] = CsvFile.create.id if =CsvFile.find_by(id: session[:...
+...                               ^
+/home/galex/pltest/app/controllers/csv_files_controller.rb:26: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/controllers/csv_files_controller.rb:25: syntax error, unexpected '='
+app/controllers/csv_files_controller.rb:26: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.2ms)
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 21:54:59 +0200
+  
+SyntaxError (/home/galex/pltest/app/controllers/csv_files_controller.rb:26: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/controllers/csv_files_controller.rb:26: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.8ms)
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 21:55:12 +0200
+  
+SyntaxError (/home/galex/pltest/app/controllers/csv_files_controller.rb:26: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/controllers/csv_files_controller.rb:26: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.1ms)
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 21:55:34 +0200
+Processing by CsvFilesController#show as HTML
+  [1m[36mCsvFile Load (1.2ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (29.2ms)[0m  [1m[32mINSERT INTO "csv_files" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2017-02-07 19:55:34 UTC], ["updated_at", 2017-02-07 19:55:34 UTC]]
+  [1m[35m (83.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCsvFile Load (0.8ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCsvFile Load (0.8ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering csv_files/show.html.haml within layouts/application
+  Rendered csv_files/show.html.haml within layouts/application (84.5ms)
+Completed 200 OK in 478ms (Views: 252.4ms | ActiveRecord: 123.7ms)
+
+
+Started PATCH "/csv_files" for 127.0.0.1 at 2017-02-07 22:07:23 +0200
+Processing by CsvFilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XM0hUokwHhi6molfD9UG7KRZuXVGZwUUPn2K73+ySy0KhkCz2XJLBcDP4aF7PZY9Zjg3RzpiY+jdhefmzU0Ukg==", "csv_file"=>{"uploaded_file_csv"=>#<ActionDispatch::Http::UploadedFile:0x007f75087d67f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-6809-1trn9p1.jpg>, @original_filename="АТС-ДАР.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"csv_file[uploaded_file_csv]\"; filename=\"\xD0\x90\xD0\xA2\xD0\xA1-\xD0\x94\xD0\x90\xD0\xA0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Import"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/csv_files_controller.rb:9:in `update'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.4ms)
+Started PATCH "/csv_files" for 127.0.0.1 at 2017-02-07 22:10:10 +0200
+Processing by CsvFilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XM0hUokwHhi6molfD9UG7KRZuXVGZwUUPn2K73+ySy0KhkCz2XJLBcDP4aF7PZY9Zjg3RzpiY+jdhefmzU0Ukg==", "csv_file"=>{"uploaded_file_csv"=>#<ActionDispatch::Http::UploadedFile:0x007f7508500fa8 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-6809-12ogggt.jpg>, @original_filename="АТС-ДАР.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"csv_file[uploaded_file_csv]\"; filename=\"\xD0\x90\xD0\xA2\xD0\xA1-\xD0\x94\xD0\x90\xD0\xA0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Import"}
+Redirected to http://localhost:3000/cards
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cards" for 127.0.0.1 at 2017-02-07 22:10:10 +0200
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (49.5ms)
+Completed 200 OK in 128ms (Views: 109.2ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 22:10:48 +0200
+Processing by CsvFilesController#show as HTML
+  [1m[36mCsvFile Load (0.7ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCsvFile Load (0.6ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering csv_files/show.html.haml within layouts/application
+  Rendered csv_files/show.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 86ms (Views: 61.0ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/csv_files" for 127.0.0.1 at 2017-02-07 22:10:54 +0200
+Processing by CsvFilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7PFh7ZxAigSgo2oMrfRtFNgl/2lpAi54IM7gZXW82DeWFp7kp1WLJBX8ngx81aJVBIbvCQS0ThwiPjwvbwnVug==", "csv_file"=>{"uploaded_file_csv"=>#<ActionDispatch::Http::UploadedFile:0x007f7512823f78 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-6809-1y69hui.pdf>, @original_filename="2C-SDK-Espressif IoT SDK Programming Guide_v0.9.5_revised.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"csv_file[uploaded_file_csv]\"; filename=\"2C-SDK-Espressif IoT SDK Programming Guide_v0.9.5_revised.pdf\"\r\nContent-Type: application/pdf\r\n">}, "commit"=>"Import"}
+Redirected to http://localhost:3000/cards
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cards" for 127.0.0.1 at 2017-02-07 22:10:54 +0200
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (55.2ms)
+Completed 200 OK in 121ms (Views: 99.1ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/cards" for 127.0.0.1 at 2017-02-07 22:25:27 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (104.6ms)
+Completed 200 OK in 656ms (Views: 616.4ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 22:25:32 +0200
+Processing by CsvFilesController#show as HTML
+  [1m[36mCsvFile Load (0.8ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 10.4ms)
+
+
+  
+ArgumentError (Unsupported argument type: 1 (Fixnum)):
+  
+app/controllers/csv_files_controller.rb:27:in `set_csv_file'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.3ms)
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 22:28:14 +0200
+Processing by CsvFilesController#show as HTML
+  [1m[36mCsvFile Load (0.8ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering csv_files/show.html.haml within layouts/application
+  Rendered csv_files/show.html.haml within layouts/application (53.0ms)
+Completed 200 OK in 242ms (Views: 196.8ms | ActiveRecord: 5.9ms)
+
+
+Started PATCH "/csv_files" for 127.0.0.1 at 2017-02-07 22:28:23 +0200
+Processing by CsvFilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iB0tyPP3AUz90e0LsmKLdV86fz3iPS2vj8jHCc3/7LveVkwpo7VUUYeEhfXGihuknVvxD544S1NsMKoAfwCzBA==", "csv_file"=>{"uploaded_file_csv"=>#<ActionDispatch::Http::UploadedFile:0x007f48e000d158 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-7470-1widy6.pdf>, @original_filename="Гайворонский - паспорт.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"csv_file[uploaded_file_csv]\"; filename=\"\xD0\x93\xD0\xB0\xD0\xB9\xD0\xB2\xD0\xBE\xD1\x80\xD0\xBE\xD0\xBD\xD1\x81\xD0\xBA\xD0\xB8\xD0\xB9 - \xD0\xBF\xD0\xB0\xD1\x81\xD0\xBF\xD0\xBE\xD1\x80\xD1\x82.pdf\"\r\nContent-Type: application/pdf\r\n">}, "commit"=>"Import"}
+  [1m[36mCsvFile Load (0.7ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `uploaded_csv_file' for #<CsvFile:0x007f48f2b961e8>
+Did you mean?  uploaded_file_csv):
+  
+app/controllers/csv_files_controller.rb:10:in `update'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.8ms)
+Started PATCH "/csv_files" for 127.0.0.1 at 2017-02-07 22:48:03 +0200
+Processing by CsvFilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iB0tyPP3AUz90e0LsmKLdV86fz3iPS2vj8jHCc3/7LveVkwpo7VUUYeEhfXGihuknVvxD544S1NsMKoAfwCzBA==", "csv_file"=>{"uploaded_file_csv"=>#<ActionDispatch::Http::UploadedFile:0x007f48f8195580 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-7470-92g6h.pdf>, @original_filename="Гайворонский - паспорт.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"csv_file[uploaded_file_csv]\"; filename=\"\xD0\x93\xD0\xB0\xD0\xB9\xD0\xB2\xD0\xBE\xD1\x80\xD0\xBE\xD0\xBD\xD1\x81\xD0\xBA\xD0\xB8\xD0\xB9 - \xD0\xBF\xD0\xB0\xD1\x81\xD0\xBF\xD0\xBE\xD1\x80\xD1\x82.pdf\"\r\nContent-Type: application/pdf\r\n">}, "commit"=>"Import"}
+  [1m[36mCsvFile Load (0.8ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/cards
+Completed 302 Found in 30ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/cards" for 127.0.0.1 at 2017-02-07 22:48:03 +0200
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (50.8ms)
+Completed 200 OK in 117ms (Views: 98.8ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/cards" for 127.0.0.1 at 2017-02-07 22:48:15 +0200
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (1.8ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (30.9ms)
+Completed 200 OK in 152ms (Views: 145.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 23:15:07 +0200
+Processing by CsvFilesController#show as HTML
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `attr_accessible' for #<Class:0x007f48e01450e8>
+Did you mean?  attr_accessor):
+  
+app/models/csv_file.rb:2:in `<class:CsvFile>'
+app/models/csv_file.rb:1:in `<top (required)>'
+app/controllers/csv_files_controller.rb:24:in `set_csv_file'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.9ms)
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 23:15:48 +0200
+Processing by CsvFilesController#show as HTML
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `attr_accesor' for #<Class:0x007f48f4183e10>
+Did you mean?  attr_accessor
+               mattr_accessor
+               cattr_accessor):
+  
+app/models/csv_file.rb:2:in `<class:CsvFile>'
+app/models/csv_file.rb:1:in `<top (required)>'
+app/controllers/csv_files_controller.rb:24:in `set_csv_file'
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/galex/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.7ms)
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 23:16:10 +0200
+Processing by CsvFilesController#show as HTML
+  [1m[36mCsvFile Load (1.4ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering csv_files/show.html.haml within layouts/application
+  Rendered csv_files/show.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 92ms (Views: 65.5ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/csv_files" for 127.0.0.1 at 2017-02-07 23:16:25 +0200
+Processing by CsvFilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gvm45n3yPNH1dIFe7tZUaj5nsxUq8ipD6tYYsmx3K/DUstkHLbBpzI8h6aCaPsS7/AY9J1b3TL8JLnW73oh0Tw==", "csv_file"=>{"uploaded_file_csv"=>#<ActionDispatch::Http::UploadedFile:0x007f48f885ef60 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-7470-mfcg24.7z>, @original_filename="BlindScannerPro.7z", @content_type="application/x-7z-compressed", @headers="Content-Disposition: form-data; name=\"csv_file[uploaded_file_csv]\"; filename=\"BlindScannerPro.7z\"\r\nContent-Type: application/x-7z-compressed\r\n">}, "commit"=>"Import"}
+  [1m[36mCsvFile Load (0.7ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+No template found for CsvFilesController#update, rendering head :no_content
+Completed 204 No Content in 23ms (ActiveRecord: 1.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (84.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (5075.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffs-discount-dev"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (1087.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffs-discount-dev"[0m
+  [1m[35m (338.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffs-discount-test"[0m
+  [1m[35m (343.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (127.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6957534942559377960);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCards (20170127200846)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (154.5ms)[0m  [1m[35mCREATE TABLE "cards" ("id" serial primary key, "CardNumber" integer, "RealName" character varying, "Gender" character varying, "Birthday" date, "Occupation" character varying, "TypeOfCard" character varying, "EgoBalance" float, "MobileNumber" character varying, "email" character varying, "Issued" character varying, "LastBuy" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (40.7ms)[0m  [1m[35mCREATE  INDEX  "index_cards_on_CardNumber" ON "cards"  ("CardNumber")[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170127200846"]]
+  [1m[35m (52.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCsvFiles (20170206123703)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (56.0ms)[0m  [1m[35mCREATE TABLE "csv_files" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170206123703"]]
+  [1m[35m (26.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAttachmentUploadedFileCsvToCsvFiles (20170206131235)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddAttachmentUploadedFileCsvToCsvFiles < ActiveRecord::Migration[4.2] (called from require at /home/galex/pltest/bin/rails:9)
+  [1m[35m (68.0ms)[0m  [1m[35mALTER TABLE "csv_files" ADD "uploaded_file_csv_file_name" character varying[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "csv_files" ADD "uploaded_file_csv_content_type" character varying[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "csv_files" ADD "uploaded_file_csv_file_size" integer[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "csv_files" ADD "uploaded_file_csv_updated_at" timestamp[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170206131235"]]
+  [1m[35m (23.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-07 21:27:39 UTC], ["updated_at", 2017-02-07 21:27:39 UTC]]
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6957534942559377960)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cards" for 127.0.0.1 at 2017-02-07 23:29:21 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.haml within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "cards"[0m
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT  "cards".* FROM "cards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered cards/index.html.haml within layouts/application (61.3ms)
+Completed 200 OK in 1026ms (Views: 985.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/csv_files" for 127.0.0.1 at 2017-02-07 23:29:25 +0200
+Processing by CsvFilesController#show as HTML
+  [1m[36mCsvFile Load (0.9ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "csv_files" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", 2017-02-07 21:29:25 UTC], ["updated_at", 2017-02-07 21:29:25 UTC]]
+  [1m[35m (29.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCsvFile Load (0.7ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering csv_files/show.html.haml within layouts/application
+  Rendered csv_files/show.html.haml within layouts/application (58.3ms)
+Completed 200 OK in 233ms (Views: 123.0ms | ActiveRecord: 51.4ms)
+
+
+Started PATCH "/csv_files" for 127.0.0.1 at 2017-02-07 23:29:35 +0200
+Processing by CsvFilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dM/Igj4xiSUb+swQNAMZus17za1BNdB3AvA023J/XJYOKDeLBSSIBa6lOBDlItb7EdjdzSyDsBMAAOiRaMpRGw==", "csv_file"=>{"uploaded_file_csv"=>#<ActionDispatch::Http::UploadedFile:0x007f8ba40449a8 @tempfile=#<Tempfile:/tmp/RackMultipart20170207-8506-25yrde.exe>, @original_filename="Записать на флешку.exe", @content_type="application/x-ms-dos-executable", @headers="Content-Disposition: form-data; name=\"csv_file[uploaded_file_csv]\"; filename=\"\xD0\x97\xD0\xB0\xD0\xBF\xD0\xB8\xD1\x81\xD0\xB0\xD1\x82\xD1\x8C \xD0\xBD\xD0\xB0 \xD1\x84\xD0\xBB\xD0\xB5\xD1\x88\xD0\xBA\xD1\x83.exe\"\r\nContent-Type: application/x-ms-dos-executable\r\n">}, "commit"=>"Import"}
+  [1m[36mCsvFile Load (1.2ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "csv_files".* FROM "csv_files" WHERE "csv_files"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+No template found for CsvFilesController#update, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 1.3ms)
+
+

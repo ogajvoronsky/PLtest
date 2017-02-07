@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     collection { post :clear }
   end
 
-  resource :import_csv
+  resource :csv_files
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

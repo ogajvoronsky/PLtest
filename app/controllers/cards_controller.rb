@@ -12,11 +12,9 @@ class CardsController < ApplicationController
   def show
   end
 
-
   def new
     @card = Card.new
   end
-
 
   def edit
   end
@@ -36,7 +34,6 @@ class CardsController < ApplicationController
     end
   end
 
-
   def update
     respond_to do |format|
       if @card.update(card_params)
@@ -48,7 +45,6 @@ class CardsController < ApplicationController
       end
     end
   end
-
 
   def destroy
     @card.destroy
@@ -64,7 +60,6 @@ class CardsController < ApplicationController
     #  file.write(upload_file)
     #end
   end
-
 
   def clear
       Card.destroy_all
